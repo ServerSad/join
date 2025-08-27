@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Join Made By ServerSadzz</title>
+	<script>
+		window.onload = function()
+		{
+			const params = new URLSearchParams(window.location.search);
+			const Id = params.get('Id');
+			const JobId = params.get('JobId');
+			if (placeId && gameInstanceId)
+			{
+				window.location.href = `roblox://placeID=${Id}&gameInstanceId=${JobId}`;
+			}
+			else
+			{
+				document.body.textContent = "Erro! Faltando Id e JobId";
+			}
+		};
+	</script>
+</head>
+<body></body>
+</html>
