@@ -9,7 +9,7 @@
 			const params = new URLSearchParams(window.location.search);
 			const Id = params.get('Id');
 			const JobId = params.get('JobId');
-			if (placeId && gameInstanceId)
+			if (Id && JobId)
 			{
 				window.location.href = `roblox://placeID=${Id}&gameInstanceId=${JobId}`;
 			}
